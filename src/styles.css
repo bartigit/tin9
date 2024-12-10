@@ -21,7 +21,6 @@ h1 {
 }
 
 .product {
-    list-style-type: decimal;
     display: flex;
     padding: 10px;
 }

@@ -15,11 +15,7 @@ function AddProduct() {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/api/admin/products/', productData, {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
+            const response = await axios.post('http://localhost:5000/api/admin/products/', productData);
 
             if (response.status === 200) {
                 const productId = response.data.product.id;

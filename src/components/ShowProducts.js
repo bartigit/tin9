@@ -23,7 +23,7 @@ function ShowProducts() {
             <ul>
                 {products.map((product) => (
                     <div className="product" key={product.id}>
-                        <li>{product.name}</li>
+                        <li>{product.id}. {product.name}</li>
                         <a href={`/products/${product.id}`}>Details</a>
                     </div>
                 ))}
